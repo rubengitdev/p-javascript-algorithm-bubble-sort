@@ -1,3 +1,7 @@
+// Core idea: Comparing neighboring pairs and swap them if they're out of order.
+// Repeat sweeping through the array - each pass pushes the largest remaining value to the end,
+// like a bubble rising.
+
 function bubbleSort(arr) {
     for (let i = 0; i < arr.length - 1; i++) {
         for (let j = 0; j < arr.length - 1 - i; j++) {
